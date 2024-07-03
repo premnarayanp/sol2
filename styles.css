@@ -1,0 +1,91 @@
+/* Write your desired CSS here */
+
+.hidden {
+    display: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.container {
+    /* border: solid 1px gray; */
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+
+.bounce-btn {
+    background-color: blue;
+    border-radius: 20px;
+    padding: 10px 15px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+}
+
+@keyframes changeShape {
+    from {
+        transform: translateY(-3px);
+    }
+    25% {
+        transform: translateY(3px);
+    }
+    50% {
+        transform: translateY(-1px);
+    }
+    75% {
+        transform: translateY(1px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.bounce-btn:hover {
+    background-color: green;
+    animation: changeShape 1s ease-in-out;
+}
+
+
+/* 
+#quizScreen {
+   
+} */
+
+#timer {
+    background-color: rgb(224, 177, 106);
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 0;
+    font-size: 14px;
+    color: white;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#scoreDisplay {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#score {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#question {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
